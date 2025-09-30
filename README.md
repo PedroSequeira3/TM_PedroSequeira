@@ -6,7 +6,9 @@
 ## Quality analysis
 ### Software & packages
 FastQC
+
 FastQ Screen
+
 MultiQC
 
 ### Scripts
@@ -14,14 +16,21 @@ MultiQC
  
  runMultiQC.sh
 
+ runFastQScreen
+
 ## Pre-processing
 ### Software & packages
 fastp
+
 Trimmomatic
 
 ### Scripts
 
- 
+testTrimmomatic.sh
+
+testfastp.sh
+
+runfastp.sh
 
 ## Mapping and gene count
 ### Software & packages
@@ -34,7 +43,9 @@ Trimmomatic
 ## Differential Expression analysis
 ### Software & packages
 DESeq
+
 edgeR
+
 NOISeq
 
 ### Scripts
@@ -43,7 +54,9 @@ NOISeq
 
 ## Functional analysis
 ### Software & packages
+Cytoscape
 
+BiNGO plugin - Cytoscape
  
 
 ## Plotting
