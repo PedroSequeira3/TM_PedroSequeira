@@ -10,8 +10,9 @@ FastQ Screen
 MultiQC
 
 ### Scripts
-runFastQC.sh
-runMultiQC.sh
+ runFastQC.sh
+ 
+ runMultiQC.sh
 
 ## Pre-processing
 ### Software & packages
