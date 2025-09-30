@@ -16,7 +16,7 @@ MultiQC
  
  runMultiQC.sh
 
- runFastQScreen
+ runFastQScreen.sh
 
 ## Pre-processing
 ### Software & packages
