@@ -37,7 +37,17 @@ runfastp.sh
 
 
 ### Scripts
+testSTAR.sh
 
+testHISAT2.sh
+
+testBowtie2.sh
+
+testKallisto.sh
+
+testSalmon.sh
+
+runSTAR.sh
  
 
 ## Differential Expression analysis
