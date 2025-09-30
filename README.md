@@ -11,6 +11,7 @@ MultiQC
 
 ### Scripts
 runFastQC.sh
+runMultiQC.sh
 
 ## Pre-processing
 ### Software & packages
