@@ -10,7 +10,7 @@ FastQ Screen
 MultiQC
 
 ### Scripts
-
+runFastQC.sh
 
 ## Pre-processing
 ### Software & packages
