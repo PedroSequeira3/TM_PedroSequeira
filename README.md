@@ -1,1 +1,49 @@
-# TM_PedroSequeira
+# Insights into Heat Stress Responses: A Comparative Transcriptomic Analysis of Two Portuguese Durum Wheat (Triticum durum) Varieties
+
+# RNA-Seq Workflow
+
+## Quality analysis
+### Software & packages
+FastQC
+FastQ Screen
+MultiQC
+
+### Scripts
+
+
+## Pre-processing
+### Software & packages
+fastp
+Trimmomatic
+
+### Scripts
+
+ 
+
+## Mapping and gene count
+### Software & packages
+
+
+### Scripts
+
+ 
+
+## Differential Expression analysis
+### Software & packages
+DESeq
+edgeR
+NOISeq
+
+### Scripts
+
+ 
+
+## Functional analysis
+### Software & packages
+
+ 
+
+## Plotting
+### Software & packages
+
+### Scripts
