@@ -1,5 +1,6 @@
 # Insights into Heat Stress Responses: A Comparative Transcriptomic Analysis of Two Portuguese Durum Wheat (Triticum durum) Varieties
-
+### Mestrado em Bioinformática e Biologia Computacional
+### Pedro Sequeira
 # RNA-Seq Workflow
 
 ## Quality analysis
