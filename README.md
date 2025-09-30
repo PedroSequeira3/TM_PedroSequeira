@@ -71,5 +71,8 @@ BiNGO plugin - Cytoscape
 
 ## Plotting
 ### Software & packages
+ggplot2
+
+VennDiagram
 
 ### Scripts
