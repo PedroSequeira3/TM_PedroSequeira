@@ -21,53 +21,40 @@
 
 ### Scripts
 
-testTrimmomatic.sh
-
-testfastp.sh
-
-runfastp.sh
++testTrimmomatic.sh
++testfastp.sh
++runfastp.sh
 
 ## Mapping and gene count
 ### Software & packages
-
++
 
 ### Scripts
-testSTAR.sh
-
-testHISAT2.sh
-
-testBowtie2.sh
-
-testKallisto.sh
-
-testSalmon.sh
-
-runSTAR.sh
- 
++testSTAR.sh
++testHISAT2.sh
++testBowtie2.sh
++testKallisto.sh
++testSalmon.sh
++runSTAR.sh
 
 ## Differential Expression analysis
 ### Software & packages
-DESeq
-
-edgeR
-
-NOISeq
++DESeq
++edgeR
++NOISeq
 
 ### Scripts
 
- 
++
 
 ## Functional analysis
 ### Software & packages
-Cytoscape
-
-BiNGO plugin - Cytoscape
- 
++ Cytoscape
++ BiNGO plugin - Cytoscape
 
 ## Plotting
 ### Software & packages
-ggplot2
-
-VennDiagram
++ggplot2
++VennDiagram
 
 ### Scripts
