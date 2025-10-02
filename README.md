@@ -57,3 +57,8 @@
 + VennDiagram
 
 ### Scripts
+
+
+
+> [!IMPORTANT]
+> In order to run a shell script, *chmod u+x* must be run for that script.
