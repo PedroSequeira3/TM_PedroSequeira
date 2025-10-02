@@ -3,7 +3,7 @@
 ### Pedro Sequeira
 # RNA-Seq Workflow
 
-## Quality analysis
+## Quality Assessment
 ### Software & packages
 + FastQC
 + FastQ Screen
@@ -24,7 +24,7 @@
 + testfastp.sh
 + runfastp.sh
 
-## Mapping and gene count
+## Mapping and Quantification
 ### Software & packages
 +
 
@@ -36,7 +36,7 @@
 + testSalmon.sh
 + runSTAR.sh
 
-## Differential Expression analysis
+## Differential Expression Analysis
 ### Software & packages
 + DESeq
 + edgeR
@@ -46,7 +46,7 @@
 
 +
 
-## Functional analysis
+## Functional Analysis
 ### Software & packages
 + Cytoscape
 + BiNGO plugin - Cytoscape
