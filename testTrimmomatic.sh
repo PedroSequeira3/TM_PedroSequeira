@@ -5,9 +5,6 @@
 # Usage:
 #   ./testTrimmomatic.sh INPUT_DIR OUTPUT_DIR INTERVAL QUALITY LENGTH
 #
-# Example:
-#   ./testTrimmomatic.sh ./raw ./trimmed 4 20 50
-#
 # Keeps only paired reads (_1P and _2P).
 # ==========================================================
 
@@ -39,8 +36,6 @@ for ((i=0; i<${#FILES[@]}; i+=2)); do
     BASE=$(basename "$R1" .fq.gz)
 
     echo "Processing: $R1 and $R2 -> $BASE"
-
-    # Output files (paired only)
     
 OUT1="$OUTPUT_DIR/${BASE}_Q${QUALITY}_L${LENGTH}_S${INTERVAL}_R1P.fq.gz"
     
