@@ -43,6 +43,7 @@ for ((i=0; i<${#FILES[@]}; i+=2)); do
 
     echo "Processing: $R1 and $R2 -> $BASE"
 
+    # Run fastp PE
     fastp -i "$R1" -I "$R2" \
     -o "$OUTPUT_DIR"/"${BASE}"_Q"$QUALITY"_L"$LENGTH"_S"$INTERVAL"_R1.fq.gz \
     -O "$OUTPUT_DIR"/"${BASE}"_Q"$QUALITY"_L"$LENGTH"_S"$INTERVAL"_R2.fq.gz \
