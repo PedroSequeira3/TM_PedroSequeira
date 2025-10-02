@@ -8,6 +8,7 @@
 # Keeps only paired reads (_1P and _2P).
 # ==========================================================
 
+# Check for correct number of arguments
 if [ "$#" -ne 5 ]; then
     echo "Usage: $0 INPUT_DIR OUTPUT_DIR INTERVAL QUALITY LENGTH"
     exit 1
