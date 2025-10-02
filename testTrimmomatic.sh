@@ -34,6 +34,7 @@ fi
 
 ADAPTERS="/opt/tools/anaconda3/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa"
 
+# Loop two by two
 for ((i=0; i<${#FILES[@]}; i+=2)); do
     R1="${FILES[$i]}"
     R2="${FILES[$i+1]}"
