@@ -20,6 +20,7 @@ INTERVAL="$3"
 QUALITY="$4"
 LENGTH="$5"
 
+# Create output dir if needed
 mkdir -p "$OUTPUT_DIR"
 
 FILES=($(ls "$INPUT_DIR"/*.fq.gz | sort))
