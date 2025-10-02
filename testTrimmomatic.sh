@@ -23,6 +23,7 @@ LENGTH="$5"
 # Create output dir if needed
 mkdir -p "$OUTPUT_DIR"
 
+# Build a sorted array of files
 FILES=($(ls "$INPUT_DIR"/*.fq.gz | sort))
 
 if (( ${#FILES[@]} % 2 != 0 )); then
