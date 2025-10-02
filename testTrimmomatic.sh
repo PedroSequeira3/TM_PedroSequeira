@@ -32,6 +32,7 @@ if (( ${#FILES[@]} % 2 != 0 )); then
     exit 1
 fi
 
+# Path to Trimmomatic adapter file (adjust if needed)
 ADAPTERS="/opt/tools/anaconda3/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa"
 
 # Loop two by two
@@ -48,6 +49,7 @@ OUT1="$OUTPUT_DIR/${BASE}_Q${QUALITY}_L${LENGTH}_S${INTERVAL}_R1P.fq.gz"
     
 OUT2="$OUTPUT_DIR/${BASE}_Q${QUALITY}_L${LENGTH}_S${INTERVAL}_R2P.fq.gz"
 
+    # Run Trimmomatic PE
     trimmomatic PE -threads 15 -phred33 \
         "$R1" "$R2" \
         "$OUT1" /dev/null \
