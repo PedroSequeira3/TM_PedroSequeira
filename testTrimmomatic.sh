@@ -26,6 +26,7 @@ mkdir -p "$OUTPUT_DIR"
 # Build a sorted array of files
 FILES=($(ls "$INPUT_DIR"/*.fq.gz | sort))
 
+# Check if number of files is even
 if (( ${#FILES[@]} % 2 != 0 )); then
     echo "Error: Odd number of FASTQ files found. Please check pairing."
     exit 1
