@@ -3,10 +3,10 @@
 # ==========================================================
 # Trimmomatic batch script (paired-only)
 # Usage:
-#   ./trimmomatic_batch.sh INPUT_DIR OUTPUT_DIR INTERVAL QUALITY LENGTH
+#   ./testTrimmomatic.sh INPUT_DIR OUTPUT_DIR INTERVAL QUALITY LENGTH
 #
 # Example:
-#   ./trimmomatic_batch.sh ./raw ./trimmed 4 20 50
+#   ./testTrimmomatic.sh ./raw ./trimmed 4 20 50
 #
 # Keeps only paired reads (_1P and _2P).
 # ==========================================================
