@@ -5,24 +5,19 @@
 
 ## Quality analysis
 ### Software & packages
-FastQC
-
-FastQ Screen
-
-MultiQC
++ FastQC
++ FastQ Screen
++ MultiQC
 
 ### Scripts
- runFastQC.sh
- 
- runMultiQC.sh
-
- runFastQScreen.sh
++ runFastQC.sh
++ runMultiQC.sh
++ runFastQScreen.sh
 
 ## Pre-processing
 ### Software & packages
-fastp
-
-Trimmomatic
++ fastp
++ Trimmomatic
 
 ### Scripts
 
