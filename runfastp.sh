@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Usage: ./script.sh INPUT_DIR OUTPUT_DIR
-# Example: ./script.sh /path/to/raw /path/to/processed
 
 # Check for correct number of arguments
 if [ "$#" -ne 2 ]; then
