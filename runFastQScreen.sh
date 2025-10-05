@@ -1,6 +1,8 @@
 #!/bin/bash
 # ==========================================================
 # FastQ Screen Auto-Setup and Run Script
+# Checks if FastQ_Screen_Genomes directory exists in the home directory
+# In case it doesn't find such path, automatically generates one and the necessary config
 # ==========================================================
 # Usage: ./runFastQScreen.sh INPUT_DIR OUTPUT_DIR
 # ==========================================================
