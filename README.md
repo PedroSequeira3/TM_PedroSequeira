@@ -24,17 +24,21 @@
 + testfastp.sh
 + runfastp.sh
 
-## Mapping and Quantification
+## Alignment and Pseudo-alignment 
 ### Software & packages
 +
 
 ### Scripts
-+ testSTAR.sh
-+ testHISAT2.sh
-+ testBowtie2.sh
-+ testKallisto.sh
-+ testSalmon.sh
++ setupSTAR.sh
++ setupHISAT2.sh
++ setupBowtie2.sh
++ setupKallisto.sh
++ setupSalmon.sh
 + runSTAR.sh
++ runHISAT2.sh
++ runBowtie2.sh
++ runKallisto.sh
++ runSalmon.sh
 
 ## Differential Expression Analysis
 ### Software & packages
