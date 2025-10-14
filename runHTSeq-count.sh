@@ -1,8 +1,7 @@
 #!/bin/bash
 # =====================================================
 # Script: run_htseqcount.sh
-# Purpose: Run HTSeq-count on all alignment files (BAM/SAM) in a 
-directory, automatically detects file format and saves one output per file
+# Purpose: Run HTSeq-count on all alignment files (BAM/SAM) in a directory, automatically detects file format and saves one output per file
 # Usage: bash run_htseqcount.sh <input_dir> <annotation_file> <output_dir>
 # =====================================================
 
@@ -38,8 +37,7 @@ mkdir -p "$OUTPUT_DIR"
 # -------------------------
 # Find alignment files (BAM or SAM)
 # -------------------------
-mapfile -t ALIGN_FILES < <(find "$INPUT_DIR" -type f \( -name "*.bam" -o 
--name "*.sam" \) | sort)
+mapfile -t ALIGN_FILES < <(find "$INPUT_DIR" -type f \( -name "*.bam" -o -name "*.sam" \) | sort)
 
 if [ ${#ALIGN_FILES[@]} -eq 0 ]; then
     echo "Error: No BAM or SAM files found in '$INPUT_DIR'."
