@@ -26,7 +26,11 @@
 
 ## Alignment and Pseudo-alignment 
 ### Software & packages
-+
++ STAR
++ HISAT2
++ Bowtie2
++ Kallisto
++ Salmon
 
 ### Scripts
 + setupSTAR.sh
@@ -40,6 +44,15 @@
 + runKallisto.sh
 + runSalmon.sh
 
+## Quantification
+### Software & packages
++ HTSeq-count
++ featureCounts
+
+## Scripts
++
+
+
 ## Differential Expression Analysis
 ### Software & packages
 + DESeq
@@ -47,7 +60,6 @@
 + NOISeq
 
 ### Scripts
-
 +
 
 ## Functional Analysis
