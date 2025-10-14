@@ -2,8 +2,7 @@
 # ============================================
 # Script to run Bowtie2 in paired-end mode
 # Usage: ./runBowtie2.sh <input_dir> <output_dir>
-# Bowtie2 index must exist at ~/BOWTIE_INDEX or will be built 
-automatically
+# Bowtie2 index must exist at ~/BOWTIE_INDEX or will be built automatically
 # ============================================
 
 INPUT_DIR=$1
