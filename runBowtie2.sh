@@ -61,8 +61,7 @@ for R1 in "$INPUT_DIR"/*_R1*.fastq* "$INPUT_DIR"/*_R1*.fq*
             2> "$OUTPUT_DIR/${SAMPLE}_log.txt"
 
     # --- Convert SAM to sorted BAM ---
-    samtools view -@ 15 -bS "$OUTPUT_DIR/${SAMPLE}.sam" | samtools sort -@ 
-15 -o "$OUTPUT_DIR/${SAMPLE}_sorted.bam"
+    samtools view -@ 15 -bS "$OUTPUT_DIR/${SAMPLE}.sam" | samtools sort -@ 15 -o "$OUTPUT_DIR/${SAMPLE}_sorted.bam"
     samtools index "$OUTPUT_DIR/${SAMPLE}_sorted.bam"
 
     # Remove SAM to save space
