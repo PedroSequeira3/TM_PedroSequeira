@@ -28,17 +28,14 @@ if [ ! -d "$HISAT2_INDEX" ] || [ -z "$(ls -A "$HISAT2_INDEX" 2>/dev/null)"
 
     SETUP_SCRIPT="$(dirname "$0")/setupHISAT2.sh"
     if [ ! -x "$SETUP_SCRIPT" ]; then
-        echo "Error: setupHISAT2.sh not found or not executable in 
-$(dirname "$0")"
-        echo "Please make sure it's in the same directory and has execute 
-permission."
+        echo "Error: setupHISAT2.sh not found or not executable in $(dirname "$0")"
+        echo "Please make sure it's in the same directory and has execute permission."
         exit 1
     fi
 
     echo "Provide the path to the genome FASTA file:"
     read GENOME_FASTA
-    echo "Provide the path to the annotation GTF file (optional, press 
-Enter to skip):"
+    echo "Provide the path to the annotation GTF file (optional, press Enter to skip):"
     read GTF_FILE
 
     "$SETUP_SCRIPT" "$GENOME_FASTA" "$GTF_FILE"
@@ -65,8 +62,7 @@ for R1 in "$INPUT_DIR"/*_R1*.fastq* "$INPUT_DIR"/*_R1*.fq*
            2> "$OUTPUT_DIR/${SAMPLE}_log.txt"
 
     # Convert SAM to sorted BAM
-    samtools view -@ 15 -bS "$OUTPUT_DIR/${SAMPLE}.sam" | samtools sort -@ 
-15 -o "$OUTPUT_DIR/${SAMPLE}_sorted.bam"
+    samtools view -@ 15 -bS "$OUTPUT_DIR/${SAMPLE}.sam" | samtools sort -@ 15 -o "$OUTPUT_DIR/${SAMPLE}_sorted.bam"
     samtools index "$OUTPUT_DIR/${SAMPLE}_sorted.bam"
     rm "$OUTPUT_DIR/${SAMPLE}.sam"
 
