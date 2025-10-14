@@ -60,8 +60,6 @@ for FILE in "${ALIGN_FILES[@]}"; do
         FORMAT="sam"
     fi
 
-    echo "Processing $FILE ($FORMAT) → $OUTPUT_FILE"
-
     htseq-count \
         -f "$FORMAT" \
         -r pos \
