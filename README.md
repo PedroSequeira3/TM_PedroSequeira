@@ -50,7 +50,8 @@
 + featureCounts
 
 ## Scripts
-+
++ runHTSeq-count.sh
++ runfeatureCounts.sh
 
 
 ## Differential Expression Analysis
