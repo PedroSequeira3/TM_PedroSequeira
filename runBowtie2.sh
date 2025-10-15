@@ -29,8 +29,7 @@ if [ ! -d "$BOWTIE_INDEX" ] || [ -z "$(ls -A "$BOWTIE_INDEX" 2>/dev/null)"
 
     SETUP_SCRIPT="$(dirname "$0")/setupBowtie2.sh"
     if [ ! -x "$SETUP_SCRIPT" ]; then
-        echo "Error: setupBowtie2.sh not found or not executable in 
-$(dirname "$0")"
+        echo "Error: setupBowtie2.sh not found or not executable in $(dirname "$0")"
         echo "Please make sure it's in the same directory and has execute permission."
         exit 1
     fi
