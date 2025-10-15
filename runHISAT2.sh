@@ -66,7 +66,6 @@ for R1 in "$INPUT_DIR"/*_R1*.fastq* "$INPUT_DIR"/*_R1*.fq*
     samtools index "$OUTPUT_DIR/${SAMPLE}_sorted.bam"
     rm "$OUTPUT_DIR/${SAMPLE}.sam"
 
-    echo "Finished $SAMPLE"
 done
 
 echo "All samples processed successfully!"
