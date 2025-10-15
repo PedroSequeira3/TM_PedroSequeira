@@ -28,8 +28,7 @@ FILES=($(ls "$INPUT_DIR"/*.fq.gz | sort))
 
 # Check if number of files is even
 if (( ${#FILES[@]} % 2 != 0 )); then
-    echo "Error: Odd number of FASTQ files found. Make sure files are 
-paired."
+    echo "Error: Odd number of FASTQ files found. Make sure files are paired."
     exit 1
 fi
 
