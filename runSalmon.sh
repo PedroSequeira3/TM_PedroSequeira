@@ -29,10 +29,8 @@ if [ ! -d "$SALMON_INDEX" ] || [ -z "$(ls -A "$SALMON_INDEX" 2>/dev/null)"
 
     SETUP_SCRIPT="$(dirname "$0")/setupSalmon.sh"
     if [ ! -x "$SETUP_SCRIPT" ]; then
-        echo "Error: setupSalmon.sh not found or not executable in 
-$(dirname "$0")"
-        echo "Please make sure it's in the same directory and has execute 
-permission."
+        echo "Error: setupSalmon.sh not found or not executable in $(dirname "$0")"
+        echo "Please make sure it's in the same directory and has execute permission."
         exit 1
     fi
 
