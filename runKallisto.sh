@@ -29,10 +29,8 @@ if [ ! -f "$KALLISTO_INDEX" ]; then
 
     SETUP_SCRIPT="$(dirname "$0")/setupKallisto.sh"
     if [ ! -x "$SETUP_SCRIPT" ]; then
-        echo "Error: setupKallisto.sh not found or not executable in 
-$(dirname "$0")"
-        echo "Please make sure it's in the same directory and has execute 
-permission."
+        echo "Error: setupKallisto.sh not found or not executable in $(dirname "$0")"
+        echo "Please make sure it's in the same directory and has execute permission."
         exit 1
     fi
 
