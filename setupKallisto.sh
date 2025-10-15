@@ -16,8 +16,7 @@ if [ -z "$TRANSCRIPTOME_FASTA" ]; then
 fi
 
 if [ ! -f "$TRANSCRIPTOME_FASTA" ]; then
-    echo "Error: transcriptome FASTA file not found at 
-$TRANSCRIPTOME_FASTA"
+    echo "Error: transcriptome FASTA file not found at $TRANSCRIPTOME_FASTA"
     exit 1
 fi
 
