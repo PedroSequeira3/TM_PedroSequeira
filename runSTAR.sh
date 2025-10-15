@@ -28,10 +28,8 @@ then
 
     SETUP_SCRIPT="$(dirname "$0”)/setupSTAR.sh"
     if [ ! -x "$SETUP_SCRIPT" ]; then
-        echo "Error: setupSTAR.sh not found or not executable in $(dirname 
-"$0")"
-        echo "Please make sure it's in the same directory and has execute 
-permission."
+        echo "Error: setupSTAR.sh not found or not executable in $(dirname "$0")"
+        echo "Please make sure it's in the same directory and has execute permission."
         exit 1
     fi
 
@@ -68,7 +66,6 @@ for R1 in "$INPUT_DIR"/*_R1*.fastq* "$INPUT_DIR"/*_R1*.fq* \
          --quantMode GeneCounts \
          --outStd Log
 
-    echo "Finished $SAMPLE"
 done
 
 echo "All samples processed successfully!"
