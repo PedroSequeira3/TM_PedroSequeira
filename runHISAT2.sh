@@ -48,8 +48,7 @@ for R1 in "$INPUT_DIR"/*_R1*.fastq* "$INPUT_DIR"/*_R1*.fq*
 "$INPUT_DIR"/*_1*.fastq* "$INPUT_DIR"/*_1*.fq*; do
     [ -e "$R1" ] || continue  # skip if none match
     SAMPLE=$(basename "$R1" | sed -E 's/_R1.*|_1.*//')
-    R2=$(find "$INPUT_DIR" -type f \( -name "${SAMPLE}_R2*.fastq*" -o 
--name "${SAMPLE}_2*.fastq*" \) | head -n 1)
+    R2=$(find "$INPUT_DIR" -type f \( -name "${SAMPLE}_R2*.fastq*" -o -name "${SAMPLE}_2*.fastq*" \) | head -n 1)
 
     if [ -z "$R2" ]; then
         continue
