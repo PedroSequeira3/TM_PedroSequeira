@@ -67,7 +67,6 @@ for R1 in "$INPUT_DIR"/*_R1*.fastq* "$INPUT_DIR"/*_R1*.fq*
     # Remove SAM to save space
     rm "$OUTPUT_DIR/${SAMPLE}.sam"
 
-    echo "Finished processing sample: $SAMPLE"
 done
 
 echo "All samples processed successfully!"
