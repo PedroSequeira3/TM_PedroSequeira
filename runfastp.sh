@@ -24,8 +24,7 @@ FILES=($(ls "$INPUT_DIR"/*.fq.gz | sort))
 
 # Check if number of files is even
 if (( ${#FILES[@]} % 2 != 0 )); then
-    echo "Error: Odd number of FASTQ files found. Make sure files are 
-paired."
+    echo "Error: Odd number of FASTQ files found. Make sure files are paired."
     exit 1
 fi
 
@@ -40,10 +39,8 @@ for ((i=0; i<${#FILES[@]}; i+=2)); do
     echo "Processing: $R1 and $R2 -> $BASE"
 
     fastp -i "$R1" -I "$R2" \
-        -o 
-"$OUTPUT_DIR"/"${BASE}"_Q"$QUALITY"_L"$LENGTH"_S"$INTERVAL"_R1.fq.gz \
-        -O 
-"$OUTPUT_DIR"/"${BASE}"_Q"$QUALITY"_L"$LENGTH"_S"$INTERVAL"_R2.fq.gz \
+        -o "$OUTPUT_DIR"/"${BASE}"_Q"$QUALITY"_L"$LENGTH"_S"$INTERVAL"_R1.fq.gz \
+        -O "$OUTPUT_DIR"/"${BASE}"_Q"$QUALITY"_L"$LENGTH"_S"$INTERVAL"_R2.fq.gz \
         --detect_adapter_for_pe \
         --length_required "$LENGTH" \
         --low_complexity_filter \
@@ -53,8 +50,7 @@ for ((i=0; i<${#FILES[@]}; i+=2)); do
         --cut_right \
         --cut_right_window_size "$INTERVAL" \
         --cut_right_mean_quality "$QUALITY" \
-        --html 
-"$OUTPUT_DIR"/"${BASE}"_Q"$QUALITY"_L"$LENGTH"_S"$INTERVAL"_report.html \
+        --html "$OUTPUT_DIR"/"${BASE}"_Q"$QUALITY"_L"$LENGTH"_S"$INTERVAL"_report.html \
         --thread 15 > "$OUTPUT_DIR"/"${BASE}"_fastp.log 2>&1
 done
 
