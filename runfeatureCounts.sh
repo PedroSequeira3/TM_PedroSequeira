@@ -37,8 +37,7 @@ mkdir -p "$OUTPUT_DIR"
 # -------------------------
 # Find alignment files (BAM or SAM)
 # -------------------------
-mapfile -t ALIGN_FILES < <(find "$INPUT_DIR" -type f \( -name "*.bam" -o 
--name "*.sam" \) | sort)
+mapfile -t ALIGN_FILES < <(find "$INPUT_DIR" -type f \( -name "*.bam" -o -name "*.sam" \) | sort)
 
 if [ ${#ALIGN_FILES[@]} -eq 0 ]; then
     echo "Error: No BAM or SAM files found in '$INPUT_DIR'."
