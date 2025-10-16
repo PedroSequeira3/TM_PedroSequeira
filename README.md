@@ -61,7 +61,7 @@
 + NOISeq
 
 ### Scripts
-+
++ runDEG_final.R
 
 ## Functional Analysis
 ### Software & packages
